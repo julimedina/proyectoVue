@@ -3,7 +3,7 @@
 
   
     <div class="card-body p-2 p-md-3" > 
-      <div class="row align-items-center componentes"  v-for="(trabajo, index) in trabajos" :key="index" >
+      <div class="row align-items-center componentes card-body"  v-for="(trabajo, index) in trabajos" :key="index" >
         <div class="justify-content-center align-items-center col-md-1 col-3">
           <img src="favicon.ico" alt="" width="70" height="70" class="rounded">
         </div>
@@ -27,11 +27,21 @@
             </div>
           </div>
           <div class="row pl-md-2 mt-1 flex-column flex-md-row" style="font-size: 0.9em;">
-            <div class="text-truncated text-capitalize col">{{trabajo.empresa}}</div>            
-            <div class="text-truncated text-capitalize col">{{trabajo.ciudad}}</div>            
-            <div class="text-truncated text-capitalize col">{{trabajo.salario}}</div>            
-            <div class="text-truncated text-capitalize col">{{trabajo.vacante}}</div>            
-            <div class="text-truncated text-capitalize col">{{trabajo.about}}</div>            
+            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
+                                apartment
+                                </span>{{trabajo.empresa}}</div>            
+            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
+                                location_on
+                            </span>{{trabajo.ciudad}}</div>            
+            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
+                                payments
+                            </span>{{trabajo.salario}}</div>            
+            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
+                                supervisor_account
+                                </span>{{trabajo.vacante}}</div>            
+            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
+                                calendar_month
+                                </span>{{trabajo.about}}</div>            
           </div> 
         </div>   
       </div>            
@@ -66,7 +76,7 @@ export default {
       {
         id: 2,
         titleVacante: 'Analista de infraestructura',
-        epresa: 'Expert Tech',
+        empresa: 'Expert Tech',
         skills: ['HTML', 'CSS','JS'],
         ciudad: "Medellín",
         salario: "1.9M - 2.1M COP",
@@ -77,7 +87,7 @@ export default {
       {
         id: 2,
         titleVacante: 'Analista de infraestructura',
-        epresa: 'Expert Tech',
+        empresa: 'Expert Tech',
         skills: ['HTML', 'CSS','JS'],
         ciudad: "Medellín",
         salario: "1.9M - 2.1M COP",
@@ -141,16 +151,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .componentes{
-    border: solid 1px lightgray !important;
-    margin-top: 20px !important;
-    border-radius: 5px !important;
+    border: solid 1px lightgray;
+    margin-top: 20px;
+    border-radius: 5px;
     
 }
 
 .componentes:hover{
-    -webkit-box-shadow: 11px 24px 24px 5px rgba(0,0,0,0.75) !important;
-    -moz-box-shadow: 11px 24px 24px 5px rgba(0,0,0,0.75) !important;
-    box-shadow: 11px 2px 24px 5px lightgray !important;
+    -webkit-box-shadow: 11px 24px 24px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 24px 24px 5px rgba(0,0,0,0.75);
+    box-shadow: 11px 2px 24px 5px lightgray;
 }
 
 .buton-requisitos{
