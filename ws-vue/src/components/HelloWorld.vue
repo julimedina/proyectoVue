@@ -11,7 +11,7 @@
           <div class="col-md-11 col-9 ">
           <div class="row align-items-center">
             <div class="mb-2 col" >
-              <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex">
+              <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
                 <h2 class="bold pl-md-2 pr-md-2 mb-0 pb-0">{{ trabajo.titleVacante }}</h2>
                 <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap">
                   <div  class="text-truncated border dark text-dark text-capitalize">
@@ -70,8 +70,8 @@ export default {
         ciudad: "Medellín",
         salario: "1.9M - 2.1M COP",
         vacante: "Vacantes 1",
-        about: "14 hours ago",
-        publicacion: "publicacion numero 1"
+        about: "24 hours ago",
+        publicacion: "publicacion numero 0"
       },
       {
         id: 2,
@@ -81,11 +81,11 @@ export default {
         ciudad: "Medellín",
         salario: "1.9M - 2.1M COP",
         vacante: "Vacantes 1",
-        about: "14 hours ago",
+        about: "15 hours ago",
         publicacion: "publicacion numero 1"
       },
       {
-        id: 2,
+        id: 3,
         titleVacante: 'Analista de infraestructura',
         empresa: 'Expert Tech',
         skills: ['HTML', 'CSS','JS'],
@@ -93,7 +93,7 @@ export default {
         salario: "1.9M - 2.1M COP",
         vacante: "Vacantes 1",
         about: "14 hours ago",
-        publicacion: "publicacion numero 1"
+        publicacion: "publicacion numero 2"
       }
     ]
     }
