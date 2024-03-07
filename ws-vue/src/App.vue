@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">    
+      
     <div class="card-body p-2">
+      <NavComp/>
+      <BlueComp/>
       <HelloWorld/>
     </div>
   </div>
@@ -10,23 +12,19 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import NavComp from './components/NavComp.vue';
+import BlueComp from './components/BlueComp.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,NavComp,BlueComp
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  
 </style>
