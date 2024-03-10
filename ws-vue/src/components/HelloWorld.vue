@@ -10,11 +10,9 @@
               <div class="mb-2 col" >
                 <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
                   <h2 class="bold pl-md-2 pr-md-2 mb-0 pb-0">{{ trabajo.titleVacante }}</h2>
-                  <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap">
-                    <div  class="text-truncated border dark text-dark text-capitalize">
-                    </div>
-                    <div class="text-truncated border dark text-dark text-capitalize m-2" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                      <span> {{ trabajo.skills }}</span>
+                  <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap">                    
+                    <div class="text-truncated border dark text-dark text-capitalize m-1" style="font-size: 0.8em; margin-bottom: 0px !important;" v-for="(skill, index) in trabajo.skills" :key="index">
+                      <span> {{ skill }}</span>
                     </div>                    
                   </section>
                 </a>
