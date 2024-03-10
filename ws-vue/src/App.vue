@@ -1,14 +1,11 @@
 <template>
-  <div id="app">
-      
+  <div id="app">      
     <div class="card-body p-2">
       <NavComp/>
       <BlueComp/>
       <HelloWorld/>
     </div>
   </div>
-  
-  
 </template>
 
 <script>
@@ -24,7 +21,5 @@ export default {
 }
 </script>
 
-<style>
-
-  
+<style>  
 </style>

@@ -1,53 +1,40 @@
 
-<template> 
-
-  
+<template>   
     <div class="card-body p-2 p-md-3" > 
-      <div class="row align-items-center componentes card-body"  v-for="(trabajo, index) in trabajos" :key="index" >
+      <div class="row align-items-center componentes card-body" v-for="(trabajo, index) in trabajos" :key="index">
         <div class="justify-content-center align-items-center col-md-1 col-3">
           <img src="favicon.ico" alt="" width="70" height="70" class="rounded">
         </div>
         <div class="container">
           <div class="col-md-11 col-9 ">
-          <div class="row align-items-center">
-            <div class="mb-2 col" >
-              <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
-                <h2 class="bold pl-md-2 pr-md-2 mb-0 pb-0">{{ trabajo.titleVacante }}</h2>
-                <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap">
-                  <div  class="text-truncated border dark text-dark text-capitalize">
-                  </div>
-                  <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                    <span>{{trabajo.titleVacante}}</span>
-                  </div>
-                  <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                    <span>{{trabajo.titleVacante}}</span>
-                  </div>
-                </section>
-              </a>
+            <div class="row align-items-center">
+              <div class="mb-2 col" >
+                <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
+                  <h2 class="bold pl-md-2 pr-md-2 mb-0 pb-0">{{ trabajo.titleVacante }}</h2>
+                  <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap">
+                    <div  class="text-truncated border dark text-dark text-capitalize">
+                    </div>
+                    <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
+                      <span>{{trabajo.titleVacante}}</span>
+                    </div>
+                    <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
+                      <span>{{trabajo.titleVacante}}</span>
+                    </div>
+                  </section>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="row pl-md-2 mt-1 flex-column flex-md-row" style="font-size: 0.9em;">
-            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
-                                apartment
-                                </span>{{trabajo.empresa}}</div>            
-            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
-                                location_on
-                            </span>{{trabajo.ciudad}}</div>            
-            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
-                                payments
-                            </span>{{trabajo.salario}}</div>            
-            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
-                                supervisor_account
-                                </span>{{trabajo.vacante}}</div>            
-            <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">
-                                calendar_month
-                                </span>{{trabajo.about}}</div>            
-          </div> 
-        </div>   
-      </div>            
+            <div class="row pl-md-2 mt-1 flex-column flex-md-row" style="font-size: 0.9em;">
+              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">apartment</span>{{trabajo.empresa}}</div>            
+              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">location_on</span>{{trabajo.ciudad}}</div>            
+              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">payments</span>{{trabajo.salario}}</div>            
+              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">supervisor_account</span>{{trabajo.vacante}}</div>            
+              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">calendar_month</span>{{trabajo.about}}</div>            
+            </div> 
+          </div>   
+        </div>            
+      </div>
     </div>
-
-        </div>
 
         
 
@@ -153,8 +140,7 @@ export default {
 .componentes{
     border: solid 1px lightgray;
     margin-top: 20px;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
 }
 
 .componentes:hover{
@@ -169,8 +155,7 @@ export default {
     width: 14%;
     border-radius: 45px;
     padding-left: 0;
-    padding-right: 0;
-   
+    padding-right: 0;   
 }
 
 </style>
