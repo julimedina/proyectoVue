@@ -82,14 +82,14 @@
     </nav>
 
       <!-- barraAzul      -->
-    <div class="containerBlue text-center bg-primary d-flex align-items-center">
+    <div class="container containerBlue text-center bg-primary d-flex align-items-center">
       <div class="row">
-        <div class="col-5 ">
+        <div class="col-6">
           <input class="form-control " type="text" name="buscarCargo" id=""
             placeholder=" Busca por cargo, salario, ubicación o empresa">
         </div>
 
-        <div class="col-7 d-flex align-items-center dropdown ">
+        <div class="col-6 d-flex align-items-center dropdown ">
           <button class="btn btn-primary btn-search dropdown-toggle botones" type="button" data-bs-toggle="dropdown"
             aria-expanded="false">Área</button>
           <button class="btn btn-primary btn-search dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -102,10 +102,64 @@
     </div>
   </div>
   </header>
-  <body>
-    <div id="app"></div>
-  <!-- built files will be auto injected -->  
-  </body>
+  <div class="container">
+    <div class="row">
+      <div class="col-1 items_menu">
+        <div class="col-2 d-flex flex-column border-right collapsed">
+          <ul class="nav mt-2 flex-column" >
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Work</span>
+                <span>Empleos</span>
+              </a>
+            </li>        
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Task</span>
+                <span>Postulaciones</span>
+              </a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Sports_Esports</span>
+                <span>Codex</span>
+              </a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Chat</span>
+                <span>Preguntas</span>
+              </a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Terminal</span>
+                <span>Bootcamp</span>
+              </a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Stars</span>
+                <span>Premios</span>
+              </a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="#" aria-current="page" class="nav-link active" target="_self">
+                <span class="material-symbols-outlined">Summarize</span>
+                <span>Tu CV</span>
+              </a>
+            </li>        
+          </ul>     
+        </div>
+      </div>
+      <div class="col-11">
+        <div id="app"></div>
+      <!-- built files will be auto injected -->
+      </div>
+    </div>
+
+    
+  </div>
 
 </body>
 

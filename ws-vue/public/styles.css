@@ -1,9 +1,10 @@
 .containerBlue {
     height: 70px;
   }
-  
-  /* .btn-search{
-    border-radius: 40px;
+
+/*  
+  .btn-search{
+    border-radius: 50px;
     border: solid 1px white;
     color: white;
     font-size: 13px;
@@ -18,4 +19,9 @@
   .button-espanol{
     border: solid 1px lightgrey;
     font-size: 12px;
-} */
+} */ */
+
+.items_menu {
+  color: black;
+  
+}
