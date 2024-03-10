@@ -1,22 +1,16 @@
-<template>
-  <div id="app">      
-    <div class="card-body p-2">
-      <NavComp/>
-      <BlueComp/>
-      <HelloWorld/>
-    </div>
+<template> 
+  <div id="app">    
+    <HelloWorld/>  
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
-import NavComp from './components/NavComp.vue';
-import BlueComp from './components/BlueComp.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,NavComp,BlueComp
+    HelloWorld
   }
 }
 </script>

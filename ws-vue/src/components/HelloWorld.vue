@@ -1,12 +1,11 @@
 
 <template>   
     <div class="card-body p-2 p-md-3" > 
-      <div class="row align-items-center componentes card-body" v-for="(trabajo, index) in trabajos" :key="index">
+      <div class="row align-items-center componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
         <div class="justify-content-center align-items-center col-md-1 col-3">
           <img src="favicon.ico" alt="" width="70" height="70" class="rounded">
-        </div>
-        <div class="container">
-          <div class="col-md-11 col-9 ">
+        </div>      
+        <div class="col-md-11 col-9 ">
             <div class="row align-items-center">
               <div class="mb-2 col" >
                 <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
@@ -14,24 +13,21 @@
                   <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap">
                     <div  class="text-truncated border dark text-dark text-capitalize">
                     </div>
-                    <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                      <span>{{trabajo.titleVacante}}</span>
-                    </div>
-                    <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                      <span>{{trabajo.titleVacante}}</span>
-                    </div>
+                    <div class="text-truncated border dark text-dark text-capitalize m-2" style="font-size: 0.8em; margin-bottom: 0px !important;">
+                      <span> {{ trabajo.skills }}</span>
+                    </div>                    
                   </section>
                 </a>
               </div>
             </div>
-            <div class="row pl-md-2 mt-1 flex-column flex-md-row" style="font-size: 0.9em;">
-              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">apartment</span>{{trabajo.empresa}}</div>            
-              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">location_on</span>{{trabajo.ciudad}}</div>            
-              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">payments</span>{{trabajo.salario}}</div>            
-              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">supervisor_account</span>{{trabajo.vacante}}</div>            
-              <div class="text-truncated text-capitalize col"><span class="material-icons-outlined">calendar_month</span>{{trabajo.about}}</div>            
-            </div> 
-          </div>   
+            <div class="row  mt-1 flex-column flex-md-row" style="font-size: 0.9em;">
+              <div class="text-truncated text-capitalize col"><span class="material-symbols-outlined">apartment</span>{{trabajo.empresa}} </div>            
+              <div class="text-truncated text-capitalize col"><span class="material-symbols-outlined">location_on</span>{{trabajo.ciudad}} </div>            
+              <div class="text-truncated text-capitalize col"><span class="material-symbols-outlined">local_atm</span> {{trabajo.salario}}</div>            
+              <div class="text-truncated text-capitalize col"><span class="material-symbols-outlined">group</span>{{trabajo.vacante}} </div>            
+              <div class="text-truncated text-capitalize col"><span class="material-symbols-outlined">calendar_month</span>{{trabajo.about}} </div>            
+              <div class="text-truncated text-capitalize col"><span class="material-symbols-outlined"></span></div>            
+            </div>             
         </div>            
       </div>
     </div>
@@ -49,87 +45,41 @@ export default {
   }, 
   data(){
     return {
-      trabajos: [{
+      trabajos:[{
         id: 1,
-        titleVacante: 'Analista de infraestructura',
-        empresa: 'Expert Tech',
-        skills: ['HTML', 'CSS','JS'],
-        ciudad: "Medellín",
-        salario: "1.9M - 2.1M COP",
+        titleVacante: 'Director Tecnico II',
+        rutaImagen: require('@/assets/metf.png'),
+        empresa: 'OFFIMEDICA SA',
+        skills: ['tecnical Knoledge', 'Attitude To service','Liderazgo'],
+        ciudad: "Bucaramanga",
+        salario: "1.9MCOP",
         vacante: "Vacantes 1",
-        about: "24 hours ago",
-        publicacion: "publicacion numero 0"
+        about: "11 hours ago"        
       },
       {
         id: 2,
         titleVacante: 'Analista de infraestructura',
+        rutaImagen: require('@/assets/metf.png'),
         empresa: 'Expert Tech',
         skills: ['HTML', 'CSS','JS'],
         ciudad: "Medellín",
         salario: "1.9M - 2.1M COP",
         vacante: "Vacantes 1",
-        about: "15 hours ago",
-        publicacion: "publicacion numero 1"
+        about: "24 hours ago"        
       },
       {
         id: 3,
-        titleVacante: 'Analista de infraestructura',
-        empresa: 'Expert Tech',
-        skills: ['HTML', 'CSS','JS'],
-        ciudad: "Medellín",
-        salario: "1.9M - 2.1M COP",
+        titleVacante: 'Analista de operaciones',
+        rutaImagen: require('@/assets/metf.png'),
+        empresa: 'Intexus',
+        skills: ['Sales', 'Client service','Attitude To service'],
+        ciudad: "presencial(Bogotá)",
+        salario: "1M - 1.4M COP",
         vacante: "Vacantes 1",
-        about: "14 hours ago",
-        publicacion: "publicacion numero 2"
+        about: "2 days ago"        
       }
+
     ]
-    }
-  },
-    methods: {  
-      publicacionMostrar() {
-        
-        const contenidoDiv = document.getElementById('hello');        
-
-        contenidoDiv.innerHTML = `<div>
-          <div class="card-body p-2 p-md-3" style="background-color: rgb(175, 175, 207);"> 
-           <div class="row align-items-center">
-             <div class="justify-content-center align-items-center col-md-1 col-3">
-               <img src="favicon.ico" alt="" width="70" height="70" class="rounded"><img>
-             </div>
-             <div class="col-md-11 col-9" v-for="(trabajo, indice) in trabajos" :key="indice">
-                {{ trabajo }}
-               <div class="row align-items-center">
-                 <div class="mb-2 col" >
-                   <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex">
-                     <h2 class="bold pl-md-2 pr-md-2 mb-0 pb-0"></h2>
-                     <section class="pl-md-2 d-md-inline-flex align-items-center text-wrap" >
-                       <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                         <span></span>
-                       </div>
-                       <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                         <span></span>
-                       </div>
-                       <div class="text-truncated border dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                         <span></span>
-                       </div>
-                     </section>
-                   </a>
-                 </div>
-               </div>
-               <div class="row pl-md-2 mt-1 flex-column flex-md-row" style="font-size: 0.9em;">
-                 <div class="text-truncated text-capitalize col"></div>            
-                 <div class="text-truncated text-capitalize col"></div>            
-                 <div class="text-truncated text-capitalize col"></div>            
-                 <div class="text-truncated text-capitalize col"></div>            
-                 <div class="text-truncated text-capitalize col"></div>            
-               </div> 
-             </div>   
-           </div>        
-         </div>
-       </div>      
-       }`
-
-      
     }
   }
 }
@@ -138,9 +88,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .componentes{
-    border: solid 1px lightgray;
-    margin-top: 20px;
-    border-radius: 5px;    
+    border: solid 1px rgb(189, 188, 188);
+    border-radius: 5px; 
+    margin: 1rem;   
 }
 
 .componentes:hover{
