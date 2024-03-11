@@ -1,6 +1,11 @@
 <template>   
+<<<<<<< HEAD
     <div class="container cont" > 
       <div class="componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
+=======
+    <div class="card-body p-2 p-md-3"> 
+      <div class="row align-items-center componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
+>>>>>>> 730d56b294aaae42a05e3336be7cd31251869781
         <div class="justify-content-center align-items-center col-md-1 col-3">
           <img :src="rutaImagen" alt="" width="70" height="70" class="rounded">
         </div>      
@@ -74,6 +79,28 @@ export default {
         salario: "1M - 1.4M COP",
         vacante: "Vacantes 1",
         about: "2 days ago"        
+      },
+      {
+        id: 4,
+        titleVacante: 'Ejecutivo Comercial',
+        rutaImagen: require('@/assets/metf.png'),
+        empresa: 'Metlife Medellin',
+        skills: ['Comercial Aggressiveness', 'Negotiation capacity'],
+        ciudad: "Medellín",
+        salario: "2M - 6M COP",
+        vacante: "Vacantes 3",
+        about: "3 days ago"        
+      },
+      {
+        id: 5,
+        titleVacante: 'Senior QA automation',
+        rutaImagen: require('@/assets/metf.png'),
+        empresa: 'Think Us',
+        skills: ['Jenkins', 'Postman','Cypress'],
+        ciudad: "Remoto",
+        salario: "2M - 2.5M COP",
+        vacante: "Vacantes 3",
+        about: "2 days ago"        
       }
 
     ]
@@ -84,9 +111,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+<<<<<<< HEAD
 
 
 .componentes{
+=======
+.componentes{    
+>>>>>>> 730d56b294aaae42a05e3336be7cd31251869781
     border: solid 1px rgb(189, 188, 188);
     border-radius: 5px; 
     margin: 1rem;  
