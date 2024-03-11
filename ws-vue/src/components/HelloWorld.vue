@@ -1,9 +1,8 @@
-
 <template>   
-    <div class="card-body p-2 p-md-3" > 
-      <div class="row align-items-center componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
+    <div class="container cont" > 
+      <div class="componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
         <div class="justify-content-center align-items-center col-md-1 col-3">
-          <img src="favicon.ico" alt="" width="70" height="70" class="rounded">
+          <img :src="rutaImagen" alt="" width="70" height="70" class="rounded">
         </div>      
         <div class="col-md-11 col-9 ">
             <div class="row align-items-center">
@@ -46,7 +45,7 @@ export default {
       trabajos:[{
         id: 1,
         titleVacante: 'Director Tecnico II',
-        rutaImagen: require('@/assets/metf.png'),
+        rutaImagen: '../src/assets/metf.png',
         empresa: 'OFFIMEDICA SA',
         skills: ['tecnical Knoledge', 'Attitude To service','Liderazgo'],
         ciudad: "Bucaramanga",
@@ -57,7 +56,7 @@ export default {
       {
         id: 2,
         titleVacante: 'Analista de infraestructura',
-        rutaImagen: require('@/assets/metf.png'),
+        rutaImagen: '../src/assets/metf.png',
         empresa: 'Expert Tech',
         skills: ['HTML', 'CSS','JS'],
         ciudad: "Medellín",
@@ -68,7 +67,7 @@ export default {
       {
         id: 3,
         titleVacante: 'Analista de operaciones',
-        rutaImagen: require('@/assets/metf.png'),
+        rutaImagen: '../src/assets/metf.png',
         empresa: 'Intexus',
         skills: ['Sales', 'Client service','Attitude To service'],
         ciudad: "presencial(Bogotá)",
@@ -85,10 +84,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
+
 .componentes{
     border: solid 1px rgb(189, 188, 188);
     border-radius: 5px; 
-    margin: 1rem;   
+    margin: 1rem;  
+    z-index: 3;
+  position: relative;
+    
 }
 
 .componentes:hover{
