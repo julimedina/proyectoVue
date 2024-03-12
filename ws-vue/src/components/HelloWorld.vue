@@ -1,11 +1,6 @@
 <template>   
-<<<<<<< HEAD
     <div class="container cont" > 
       <div class="componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
-=======
-    <div class="card-body p-2 p-md-3"> 
-      <div class="row align-items-center componentes card-body p-3" v-for="(trabajo, index) in trabajos" :key="index">
->>>>>>> 730d56b294aaae42a05e3336be7cd31251869781
         <div class="justify-content-center align-items-center col-md-1 col-3">
           <img :src="rutaImagen" alt="" width="70" height="70" class="rounded">
         </div>      
@@ -111,13 +106,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-<<<<<<< HEAD
 
-
-.componentes{
-=======
 .componentes{    
->>>>>>> 730d56b294aaae42a05e3336be7cd31251869781
     border: solid 1px rgb(189, 188, 188);
     border-radius: 5px; 
     margin: 1rem;  
