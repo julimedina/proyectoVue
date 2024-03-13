@@ -15,6 +15,10 @@ header{
     height: 70px;
 
   }
+
+  .input-blue{
+    margin-left: 160px;
+  }
   
   .btn-blue{
     border-radius: 40px;
