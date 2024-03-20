@@ -45,7 +45,7 @@ export default {
       trabajos:[{
         id: 1,
         titleVacante: 'Director Tecnico II',
-        rutaImagen: '../src/assets/metf.png',
+        rutaImagen: '@/assets/metf.png',
         empresa: 'OFFIMEDICA SA',
         skills: ['tecnical Knoledge', 'Attitude To service','Liderazgo'],
         ciudad: "Bucaramanga",
@@ -56,7 +56,7 @@ export default {
       {
         id: 2,
         titleVacante: 'Analista de infraestructura',
-        rutaImagen: '../src/assets/metf.png',
+        rutaImagen: '@assets/metf.png',
         empresa: 'Expert Tech',
         skills: ['HTML', 'CSS','JS'],
         ciudad: "Medellín",
@@ -67,7 +67,7 @@ export default {
       {
         id: 3,
         titleVacante: 'Analista de operaciones',
-        rutaImagen: '../src/assets/metf.png',
+        rutaImagen: '@/assets/metf.png',
         empresa: 'Intexus',
         skills: ['Sales', 'Client service','Attitude To service'],
         ciudad: "presencial(Bogotá)",
@@ -115,7 +115,7 @@ export default {
     border-radius: 5px; 
     margin: 1rem;  
     z-index: 3;
-  position: relative;
+    position: relative;
     
 }
 
@@ -133,6 +133,8 @@ export default {
     padding-left: 0;
     padding-right: 0;   
 }
+
+
 
 </style>
 

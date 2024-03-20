@@ -3,17 +3,19 @@
   font-size: 12px !important;
 }
 
-header{
+/* header{
   position: sticky !important;
   z-index: 1 !important;
-  top: 0 !important;
-  
+  top: 0 !important;   
 
-}
+} */
 
-.containerBlue {
+#containerBlue {
     height: 70px;
-
+    position: fixed !important;
+    z-index: 1 !important;
+    
+ 
   }
 
   .input-blue{
@@ -33,7 +35,7 @@ header{
   }
   
   #sidenav.collapsed{
-    width: 90px;
+    width: 100px;
   }
 #sidenav{
   background-color: #fff;
