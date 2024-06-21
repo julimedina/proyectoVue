@@ -3,11 +3,12 @@
   font-size: 12px !important;
 }
 
-header{
+/* header{
   position: sticky !important;
   z-index: 1 !important;
-  top: 0 !important;
-  
+  top: 0 !important;   
+
+} */
 
 }
 a{
@@ -40,7 +41,7 @@ a{
   }
   
   #sidenav.collapsed{
-    width: 90px;
+    width: 100px;
   }
  #sidenav{
   background-color: #fff;
