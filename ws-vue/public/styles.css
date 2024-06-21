@@ -10,11 +10,18 @@ header{
   
 
 }
+a{
+  color: black !important;
+}
+
+
 
 .containerBlue {
     height: 70px;
-
+ 
+  
   }
+  
 
   .input-blue{
     margin-left: 160px;
@@ -35,11 +42,12 @@ header{
   #sidenav.collapsed{
     width: 90px;
   }
-#sidenav{
+ #sidenav{
   background-color: #fff;
   color: black;
+  text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   height: 100%;
   position: fixed;
   z-index: 3;
@@ -54,8 +62,8 @@ header{
     border: none;
     width: 80px;
     height: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-right: 10px;
+    
 }
 
 .btn-aside:hover{
@@ -68,6 +76,36 @@ header{
     font-size: 12px;
 } 
 
+
+.containerBlue {
+  height: 70px;
+
+  
+}
+
+
+.btn-search{
+  border-radius: 50px;
+  border: solid 1px white;
+  color: white;
+  font-size: 13px;
+  
+}
+
+.btn-search:hover{
+  background-color: white !important;
+  color: black !important;
+}
+
+.button-espanol{
+  border: solid 1px lightgrey;
+  font-size: 12px;
+} 
+
 .items_menu {
-  color: black;  
+color: black;
+
+}
+.nav-aside{
+  margin-top: 50%;
 }
